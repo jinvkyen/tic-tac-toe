@@ -1,5 +1,5 @@
 <h1>About</h1>
-<p align="center"> This game is made with the help of "_Building Tic Tac Toe with HTML, CSS & JavaScript for Beginners_" by **Java Break** on Youtube. <br>
+<p align="center"> This game is made with the help of "Building Tic Tac Toe with HTML, CSS & JavaScript for Beginners" by **Java Break** on Youtube. <br>
 CDN used for the confetti animation is from Canvas Confetti [https://www.kirilv.com/canvas-confetti/]
 </p>
 
