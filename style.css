@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Arcane';
+    src: url('assets/fonts/Arcane\ Nine.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        rgb(73, 141, 236),
+        rgb(162, 144, 214),
+        rgba(192,128,187),
+        rgba(200,80,166),
+        rgba(208,32,144)
+    );
+}
+#title{      
+    font-family: 'Arcane', Arial, sans-serif;
+    font-size: 85px;
+    top: -1%;
+    color: rgb(245, 208, 44);
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    text-shadow: 3px 3px 3px rgb(217, 134, 27);
+    user-select: none;
+}
+#player1, #player2{
+    position: absolute;
+    top: 42%;
+    border-radius: 100rem;
+    border: 3px solid rgba(251, 251, 251, 0.884);
+    border-style: solid;
+    transition: box-shadow 0.5s ease-in-out;
+    user-select: none;
+}
+#player1{
+    left: 12%;
+    box-shadow: 0px 0px 120px rgb(255, 0, 106);
+}
+#player2{
+    left: 75%;
+    box-shadow: none;
+}
+#board{
+    margin-top: 13%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+.square{
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgba(76, 71, 71, 0.168);
+    border-radius: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease-in-out;
+}
+.square:hover{
+    background-color: rgba(255, 255, 255, 0.551);
+}
+#x-o-img{
+    user-select: none;
+}
+#turnText{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-shadow: 0px 0px 15px rgb(251, 255, 0);
+    color: #ff0000;
+}
+#resetBtn{
+    padding: 5px;
+    margin-left: 30px;
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
